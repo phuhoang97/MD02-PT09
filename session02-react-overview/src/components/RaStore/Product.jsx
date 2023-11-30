@@ -1,15 +1,16 @@
 import React from "react";
 
-function Product() {
+function Product({ element }) {
+  // console.log(element);
   return (
     <a href=''>
       <div className='product_box'>
         <div className='product_img-box'>
-          <img src='images/p1.png' alt='' />
+          <img src={element.src} alt='photo' />
           <span> Sale </span>
         </div>
         <div className='product_detail-box'>
-          <span> $120.00 </span>
+          <span> {element.price} </span>
           <p>Passage of Lorem Ipsum, you</p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 // rfce
 
-import React from "react";
+import React, { useState } from "react";
 import HeaderPage from "./HeaderPage";
 import SliderPage from "./SliderPage";
 import DetailPage from "./DetailPage";
@@ -9,6 +9,20 @@ import FindPage from "./FindPage";
 import FooterPage from "./FooterPage";
 
 function HomePage() {
+  const [dataProduct, setDataProduct] = useState([
+    { id: 1, src: "images/p1.png", price: "$120.00" },
+    { id: 2, src: "images/p2.png", price: "$110.00" },
+    { id: 3, src: "images/p3.png", price: "$150.00" },
+    { id: 4, src: "images/p4.png", price: "$150.00" },
+    { id: 5, src: "images/p5.png", price: "$150.00" },
+    { id: 6, src: "images/p6.png", price: "$150.00" },
+    { id: 7, src: "images/p7.png", price: "$150.00" },
+    { id: 8, src: "images/p8.png", price: "$150.00" },
+    { id: 9, src: "images/p9.png", price: "$150.00" },
+    { id: 10, src: "images/p10.png", price: "$150.00" },
+    { id: 11, src: "images/p11.png", price: "$150.00" },
+    { id: 12, src: "images/p12.png", price: "$150.00" },
+  ]);
   return (
     <>
       <div className='hero_area'>
@@ -31,6 +45,7 @@ function HomePage() {
         </div>
         <div className='container layout_padding'>
           <div className='product_container'>
+            {/* <Product />
             <Product />
             <Product />
             <Product />
@@ -41,8 +56,13 @@ function HomePage() {
             <Product />
             <Product />
             <Product />
-            <Product />
-            <Product />
+            <Product /> */}
+
+            {dataProduct.map((element, index) => (
+              <Product element={element} index={index} />
+            ))}
+
+            
           </div>
         </div>
       </section>
