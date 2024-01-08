@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Tuan Anh",
+      "age": "23",
+      "address": "HN",
+      "phone": "0911245189"
+    },
+    {
+      "id": 2,
+      "name": "Tung",
+      "age": "26",
+      "address": "HN",
+      "phone": "0912515515"
+    },
+    {
+      "id": 3,
+      "name": "khang",
+      "age": "23",
+      "address": "HN",
+      "phone": "091251125"
+    },
+    {
+      "name": "Hoang",
+      "age": "28",
+      "address": "Ha noi",
+      "phone": "0911245412",
+      "id": 6
+    }
+  ]
+}
