@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  height: 50px;
+  background-color: rgb(166, 178, 191);
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item a {
+  color: white;
+  font-size: 19px;
+}
+
+.nav-item button {
+  border: none;
+  background-color: rgb(166, 178, 191);
+  color: white;
+  font-size: 19px;
+  padding: 0;
+}
